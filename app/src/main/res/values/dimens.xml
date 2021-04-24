@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_99">99dp</dimen>
+    <dimen name="margin_top_241">241dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="textsize_23">23sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+</resources>

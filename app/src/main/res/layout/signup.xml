@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gradation"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:text="회원가입"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="회원가입"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_msg" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="이채민"
+        android:gravity="left"
+        android:inputType="text"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="휴대폰 번호"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/contact_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="+91 9560721257"
+        android:gravity="left"
+        android:inputType="number"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="생년월일"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dob_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="abhisheksrvstv7@gmail.com"
+        android:gravity="left"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="Email"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/email_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="abhisheksrvstv7@gmail.com"
+        android:gravity="left"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="비밀번호"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="Abhi1991"
+        android:gravity="left"
+        android:inputType="textPassword"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="비밀번호"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/confirm_password_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="Abhi1991"
+        android:gravity="left"
+        android:inputType="textPassword"
+        android:textColorHint="#B7B7B7"
+        android:textColor="#0A0A0A"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

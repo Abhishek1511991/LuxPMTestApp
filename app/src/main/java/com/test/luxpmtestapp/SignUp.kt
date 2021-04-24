@@ -1,11 +1,13 @@
 package com.test.luxpmtestapp
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class SignUp : BaseActivity() {
+    override var resourceId: Int
+        get() = R.layout.signup
+        set(value) {}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
     }
 }

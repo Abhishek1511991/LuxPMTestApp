@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gradation"
+        android:layout_marginTop="@dimen/margin_top_99"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/image_view_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_300"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/group8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group8"
+        app:layout_constraintBottom_toTopOf="@id/image_view_guideline"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/group7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group7"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/group8"
+        app:layout_constraintBottom_toTopOf="@id/image_view_guideline" />
+
+
+
+    <ImageView
+        android:id="@+id/group6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group6"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/group7"
+        app:layout_constraintBottom_toTopOf="@id/image_view_guideline"  />
+
+
+    <ImageView
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group4"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/group6"
+        app:layout_constraintBottom_toTopOf="@id/image_view_guideline" />
+
+
+    <TextView
+        android:id="@+id/title_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/stay_on_the_top_of_your_finance"
+        android:textSize="@dimen/textsize_23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group8" />
+    <TextView
+        android:id="@+id/title_msg_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam"
+        android:textSize="@dimen/textsize_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_msg" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="287dp"
+        android:layout_height="53dp"
+        android:background="@drawable/gotologin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/gotologin"
+        android:gravity="center"
+        android:textSize="@dimen/text_size16"
+        android:layout_marginBottom="100dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="로그인"
+        android:textSize="@dimen/textsize_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
